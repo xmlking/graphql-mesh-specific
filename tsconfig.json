@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"outDir": "dist",
+		"skipLibCheck": true,
+		"target": "esnext",
+		"moduleResolution": "node",
+		"module": "commonjs",
+		"lib": ["esnext"],
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}

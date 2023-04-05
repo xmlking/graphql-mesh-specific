@@ -1,0 +1,30 @@
+sources:
+#   - name: Hasura
+#     handler:
+#       graphql:
+#         endpoint: '{env.HASURA_GRAPHQL_ENDPOINT}/v1/graphql'
+#         schemaHeaders:
+#           x-hasura-admin-secret: '{env.HASURA_GRAPHQL_ADMIN_SECRET}'
+#         operationHeaders:
+#           Content-Type: application/json
+#           Authorization: '{context.headers.authorization}'
+#           x-hasura-role: '{context.headers.x-hasura-role}'
+  - name: Countries
+    handler:
+      graphql:
+        endpoint: https://countries.trevorblades.com
+  - name: Cart
+    handler:
+      graphql:
+        endpoint: https://api.cartql.com
+
+transforms:
+  - prune:
+      skipPruning: []
+
+serve:
+  playground: true
+  browser: false
+
+customFetch:  '/app/src/middleware/custom-fetch.ts'
+additionalEnvelopPlugins: './src/plugins/index.ts'

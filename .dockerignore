@@ -1,0 +1,14 @@
+/*
+!/.meshrc.yml
+!/.meshrc.prod.yml
+!/tsconfig.json
+!/package.json
+!/pnpm-lock.yaml
+!/pnpm-workspace.yaml
+
+!/patches
+!/config
+!/src
+# we need some static/build-time environment variables during build
+!.env
+!.npmrc

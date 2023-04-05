@@ -1,0 +1,48 @@
+{
+	"name": "graphql-mesh",
+	"version": "0.1.0",
+	"private": true,
+	"description": "GraphQL Mesh Gateway Docker",
+	"keywords": [
+		"GraphQL",
+		"GraphQL Mesh",
+		"GraphQL Gateway",
+		"GraphQL Docker"
+	],
+	"author": "Sumanth Chinthagunta",
+	"license": "MIT",
+	"main": "src/index.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "mesh dev",
+		"dev:debug": "DEBUG=1 mesh dev",
+		"start": "mesh start",
+		"startx": "tsx src/index.ts",
+		"validate": "mesh validate",
+		"build": "mesh build -r dotenv/config",
+		"prebuild": "mesh build"
+	},
+	"packageManager": "pnpm@8.1.0",
+	"engines": {
+		"pnpm": "^8.0.0"
+	},
+	"dependencies": {
+		"@envelop/generic-auth": "5.0.6",
+		"@graphql-mesh/cli": "0.82.30",
+		"@graphql-mesh/graphql": "0.34.14",
+		"@graphql-mesh/json-schema": "0.38.0",
+		"@graphql-mesh/openapi": "0.36.0",
+		"@graphql-mesh/transform-filter-schema": "0.15.24",
+		"@graphql-mesh/transform-prefix": "0.12.22",
+		"@graphql-mesh/transform-prune": "0.1.20",
+		"@graphql-mesh/transform-rename": "0.14.22"
+	},
+	"peerDependencies": {
+		"graphql": "^16.6.0",
+		"tslib": "^2.5.0"
+	},
+	"devDependencies": {
+		"@types/node": "18.15.11",
+		"graphql-tag": "2.12.6"
+	}
+}
