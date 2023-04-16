@@ -28,14 +28,14 @@
 	},
 	"dependencies": {
 		"@envelop/generic-auth": "5.0.6",
-		"@graphql-mesh/cli": "0.82.30",
-		"@graphql-mesh/graphql": "0.34.14",
+		"@graphql-mesh/cli": "0.82.32",
+		"@graphql-mesh/graphql": "0.34.16",
 		"@graphql-mesh/json-schema": "0.38.0",
 		"@graphql-mesh/openapi": "0.36.0",
-		"@graphql-mesh/transform-filter-schema": "0.15.24",
-		"@graphql-mesh/transform-prefix": "0.12.22",
+		"@graphql-mesh/transform-filter-schema": "0.15.25",
+		"@graphql-mesh/transform-prefix": "0.12.23",
 		"@graphql-mesh/transform-prune": "0.1.20",
-		"@graphql-mesh/transform-rename": "0.14.22"
+		"@graphql-mesh/transform-rename": "0.14.23"
 	},
 	"peerDependencies": {
 		"graphql": "^16.6.0",

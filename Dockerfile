@@ -9,7 +9,7 @@
 FROM node:19-alpine as runtime
 
 # install pnpm
-RUN corepack enable; corepack prepare pnpm@8.1.0 --activate
+RUN corepack enable; corepack prepare pnpm@8.2.0 --activate
 
 WORKDIR /app
 
